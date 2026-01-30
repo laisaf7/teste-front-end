@@ -1,0 +1,29 @@
+.categorias {
+    margin: 39px 140px 90px 140px;
+    display: flex;
+    justify-content: space-between;
+    .categoria-container-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        .categoria-container-img {
+            width: 120px;
+            height: 120px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.13);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $cinza-categorias;
+        }
+        .categoria-texto {
+            font-size: 14px;
+            font-weight: 500;
+            color: $preto-claro;
+            margin-top: 22px;
+        }
+    }
+}

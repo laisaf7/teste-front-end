@@ -1,0 +1,88 @@
+.vitrine {
+    margin: 0 37px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .vitrine-titulo {
+        font-weight: 700;
+        font-size: 30px;
+        color: $roxo;
+        margin: 0;
+    }
+    .vitrine-categorias {
+        padding: 0 42px 0 42px;
+        margin: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        .vitrine-container-categoria-item{
+            width: 200px;
+            height: 40px;
+            border: 1px solid #bdbdbd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .vitrine-categoria-item {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 16px;
+                color: #3b3b3b;
+                &:hover {
+                color: #3442b5;
+                font-weight: 700;
+                }
+            }
+        }
+    }
+    .vitrine-container {
+        display: flex;
+        gap: 18px;
+        .vitrine-container-item {
+            border: 1px solid transparent;
+            border-radius: 10px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.13);
+            padding: 16px 12px;
+            .vitrine-titulo-item {
+                font-weight: 300;
+                font-size: 15px;
+                color: #3f3f40;
+                margin: 0 0 12px 0;
+            }
+            .vitrine-preco-antigo {
+                font-weight: 400;
+                font-size: 16px;
+                color: #808080;
+                margin: 0 0 2px 0;
+            }
+            .vitrine-preco-novo {
+                font-weight: 700;
+                font-size: 20px;
+                color: #3f3f40;
+                margin: 0 0 2px 0;
+            }
+            .vitrine-preco-parcelado {
+                font-weight: 400;
+                font-size: 12px;
+                color: #3f3f40;
+                margin: 0 0 7px 0;
+            }
+            .vitrine-frete {
+                font-weight: 400;
+                font-size: 12px;
+                color: $roxo;
+                margin: 0 0 7px 0;
+            }
+            .vitrine-btn {
+                padding: 14px 105px;
+                background-color: $roxo;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                font-weight: 700;
+                font-size: 14px;
+                color: $branco;
+                cursor: pointer;
+            }
+        }
+    }
+}

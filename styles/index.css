@@ -8,7 +8,7 @@ html, body {
 nav {
   display: flex;
   flex-direction: column;
-  margin: 0 100px;
+  margin: 0 80px;
 }
 nav .cabecalho-info-compra {
   display: flex;
@@ -119,10 +119,196 @@ nav .cabecalho-categorias .cabecalho-categoria-item:hover {
 }
 
 .banner {
-  background: url("../../img/loja-black-friday.png") no-repeat;
-  width: 100%;
-  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 30%, transparent 70%), url("../../img/loja-black-friday.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 0px 81px;
 }
-.banner h2 {
+.banner .banner-titulo {
   margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  color: #fff;
+  max-width: 600px;
+}
+.banner .banner-subtitulo {
+  margin: 0 0 41px 0;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+}
+.banner .banner-subtitulo-destaque {
+  font-weight: 700;
+  color: #f7ca11;
+}
+.banner .banner-btn {
+  padding: 13px 54px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #271c47;
+  background-color: #f7ca11;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 55px;
+  cursor: pointer;
+}
+
+.categorias {
+  margin: 39px 140px 90px 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.categorias .categoria-container-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.categorias .categoria-container-item .categoria-container-img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+.categorias .categoria-container-item .categoria-texto {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4e4e4e;
+  margin-top: 22px;
+}
+
+.vitrine {
+  margin: 0 37px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.vitrine .vitrine-titulo {
+  font-weight: 700;
+  font-size: 30px;
+  color: #3442b5;
+  margin: 0;
+}
+.vitrine .vitrine-categorias {
+  padding: 0 42px 0 42px;
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.vitrine .vitrine-categorias .vitrine-container-categoria-item {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #bdbdbd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vitrine .vitrine-categorias .vitrine-container-categoria-item .vitrine-categoria-item {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3b3b3b;
+}
+.vitrine .vitrine-categorias .vitrine-container-categoria-item .vitrine-categoria-item:hover {
+  color: #3442b5;
+  font-weight: 700;
+}
+.vitrine .vitrine-container {
+  display: flex;
+  gap: 18px;
+}
+.vitrine .vitrine-container .vitrine-container-item {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.13);
+  padding: 16px 12px;
+}
+.vitrine .vitrine-container .vitrine-container-item .vitrine-titulo-item {
+  font-weight: 300;
+  font-size: 15px;
+  color: #3f3f40;
+  margin: 0 0 12px 0;
+}
+.vitrine .vitrine-container .vitrine-container-item .vitrine-preco-antigo {
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  margin: 0 0 2px 0;
+}
+.vitrine .vitrine-container .vitrine-container-item .vitrine-preco-novo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #3f3f40;
+  margin: 0 0 2px 0;
+}
+.vitrine .vitrine-container .vitrine-container-item .vitrine-preco-parcelado {
+  font-weight: 400;
+  font-size: 12px;
+  color: #3f3f40;
+  margin: 0 0 7px 0;
+}
+.vitrine .vitrine-container .vitrine-container-item .vitrine-frete {
+  font-weight: 400;
+  font-size: 12px;
+  color: #3442b5;
+  margin: 0 0 7px 0;
+}
+.vitrine .vitrine-container .vitrine-container-item .vitrine-btn {
+  padding: 14px 105px;
+  background-color: #3442b5;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.parceiros {
+  display: flex;
+  gap: 13px;
+  margin: 90px 80px;
+}
+.parceiros .parceiros-container {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 55%), url("../../img/loja.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  max-width: 634px;
+  max-height: 350px;
+  padding: 114px 373px 40px 44px;
+}
+.parceiros .parceiros-container .parceiros-titulo {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+.parceiros .parceiros-container .parceiros-texto {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin: 0 0 32px 0;
+}
+.parceiros .parceiros-container .parceiros-btn {
+  padding: 12px 26px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #271c47;
+  background-color: #f7ca11;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,40 @@
+.parceiros {
+    display: flex;
+    gap: 13px;
+    margin: 90px 80px;
+    .parceiros-container {
+        background-image: 
+            linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.15) 55%),
+            url("../../img/loja.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        max-width: 634px;
+        max-height: 350px;
+        padding: 114px 373px 40px 44px;
+        .parceiros-titulo {
+            font-weight: 700;
+            font-size: 40px;
+            color: $branco;
+            margin: 0 0 8px 0;
+        }
+        .parceiros-texto {
+            font-weight: 400;
+            font-size: 16px;
+            color: $branco;
+            margin: 0 0 32px 0;
+        }
+        .parceiros-btn {
+        padding: 12px 26px;
+        font-family: $fonte;
+        font-size: 16px;
+        font-weight: 700;
+        color: $azul-escuro;
+        background-color: $amarelo;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        cursor: pointer;
+        }
+    }
+}

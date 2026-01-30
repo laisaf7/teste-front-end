@@ -92,115 +92,231 @@
     </header>
     <main>
         <section class="banner">
-            <h2>Venha conhecer nossas promoções</h2>
-            <h3><strong>50% Off </strong>nos produtos</h3>
-            <button>Ver produto</button>
+            <h2 class="banner-titulo">Venha conhecer nossas promoções</h2>
+            <h3 class="banner-subtitulo"><strong class="banner-subtitulo-destaque">50% Off </strong>nos produtos</h3>
+            <a href="#"><button class="banner-btn">Ver produto</button></a>
         </section>
-        <section>
+        <section class="categorias">
             <div>
-                <div><img src="img/tecnologia.svg" alt="Imagem de um computador, tablet e celular"></div>
-                <p>Tecnologia</p>
+                <a href="#" class="categoria-container-item">
+                    <div class="categoria-container-img"><img src="img/tecnologia.svg"
+                            alt="Imagem de um computador, tablet e celular"></div>
+                    <p class="categoria-texto">Tecnologia</p>
+                </a>
             </div>
             <div>
-                <div><img src="img/supermercado.svg" alt="Imagem de um supermercado"></div>
-                <p>Supermercado</p>
+                <a href="#" class="categoria-container-item">
+                    <div class="categoria-container-img"><img src="img/supermercado.svg"
+                            alt="Imagem de um supermercado">
+                    </div>
+                    <p class="categoria-texto">Supermercado</p>
+                </a>
             </div>
             <div>
-                <div><img src="img/whiskey.svg" alt="Imagem de uma garrafa e um copo de vidro com bebida"></div>
-                <p>Bebidas</p>
+                <a href="#" class="categoria-container-item">
+                    <div class="categoria-container-img"><img src="img/whiskey.svg"
+                            alt="Imagem de uma garrafa e um copo de vidro com bebida"></div>
+                    <p class="categoria-texto">Bebidas</p>
+                </a>
             </div>
             <div>
-                <div><img src="img/ferramentas.svg" alt="Imagem de um martelo e uma chave de fenda cruzados"></div>
-                <p>Ferramentas</p>
+                <a href="#" class="categoria-container-item">
+                    <div class="categoria-container-img"><img src="img/ferramentas.svg"
+                            alt="Imagem de um martelo e uma chave de fenda cruzados"></div>
+                    <p class="categoria-texto">Ferramentas</p>
+                </a>
             </div>
             <div>
-                <div><img src="img/cuidados-de-saude.svg" alt="Imagem de uma mão segurando um coração"></div>
-                <p>Saúde</p>
+                <a href="#" class="categoria-container-item">
+                    <div class="categoria-container-img"><img src="img/cuidados-de-saude.svg"
+                            alt="Imagem de uma mão segurando um coração"></div>
+                    <p class="categoria-texto">Saúde</p>
+                </a>
             </div>
             <div>
-                <div><img src="img/corrida.svg" alt="Imagem de uma pessoa correndo numa esteira"></div>
-                <p>Esportes e Fitness</p>
+                <a href="#" class="categoria-container-item">
+                    <div class="categoria-container-img"><img src="img/corrida.svg"
+                            alt="Imagem de uma pessoa correndo numa esteira"></div>
+                    <p class="categoria-texto">Esportes e Fitness</p>
+                </a>
             </div>
             <div>
-                <div><img src="img/moda.svg" alt="Imaggem de um vestido, sapato de salto alto e um diamante"></div>
-                <p>Moda</p>
+                <a href="#" class="categoria-container-item">
+                    <div class="categoria-container-img"><img src="img/moda.svg"
+                            alt="Imaggem de um vestido, sapato de salto alto e um diamante"></div>
+                    <p class="categoria-texto">Moda</p>
+                </a>
             </div>
         </section>
-        <section>
-            <h3>Produtos relacionados</h3>
-            <ul>
-                <li>CELULAR</li>
-                <li>ACESSÓRIOS</li>
-                <li>TABLETS</li>
-                <li>NOTEBOOKS</li>
-                <li>TVS</li>
-                <li>VER TODOS</li>
+        <section class="vitrine">
+            <h3 class="vitrine-titulo">Produtos relacionados</h3>
+            <ul class="vitrine-categorias">
+                <li class="vitrine-container-categoria-item">
+                    <a href="#" class="vitrine-categoria-item">
+                        <p>CELULAR</p>
+                    </a>
+                </li>
+                <li class="vitrine-container-categoria-item">
+                    <a href="#" class="vitrine-categoria-item">
+                        <p>ACESSÓRIOS</p>
+                    </a>
+                </li>
+                <li class="vitrine-container-categoria-item">
+                    <a href="#" class="vitrine-categoria-item">
+                        <p>TABLETS</p>
+                    </a>
+                </li>
+                <li class="vitrine-container-categoria-item">
+                    <a href="#" class="vitrine-categoria-item">
+                        <p>NOTEBOOKS</p>
+                    </a>
+                </li>
+                <li class="vitrine-container-categoria-item">
+                    <a href="#" class="vitrine-categoria-item">
+                        <p>TVS</p>
+                    </a>
+                </li>
+                <li class="vitrine-container-categoria-item">
+                    <a href="#" class="vitrine-categoria-item">
+                        <p>VER TODOS</p>
+                    </a>
+                </li>
             </ul>
-            <div>
-                <div>
+            <div class="vitrine-container">
+                <div class="vitrine-container-item">
                     <div>
                         <img src="img/iphone.png" alt="iPhone">
                     </div>
                     <div>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <p>R$ 30,90</p>
-                        <p>R$ 28,90</p>
-                        <p>ou 2x de R$ 49,95 sem juros</p>
-                        <p>Frete grátis</p>
-                        <button>COMPRAR</button>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
                     </div>
                 </div>
-                <div>
+                <div class="vitrine-container-item">
                     <div>
                         <img src="img/iphone.png" alt="iPhone">
                     </div>
                     <div>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <p>R$ 30,90</p>
-                        <p>R$ 28,90</p>
-                        <p>ou 2x de R$ 49,95 sem juros</p>
-                        <p>Frete grátis</p>
-                        <button>COMPRAR</button>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
                     </div>
                 </div>
-                <div>
+                <div class="vitrine-container-item">
                     <div>
                         <img src="img/iphone.png" alt="iPhone">
                     </div>
                     <div>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <p>R$ 30,90</p>
-                        <p>R$ 28,90</p>
-                        <p>ou 2x de R$ 49,95 sem juros</p>
-                        <p>Frete grátis</p>
-                        <button>COMPRAR</button>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
                     </div>
                 </div>
-                <div>
+                <div class="vitrine-container-item">
                     <div>
                         <img src="img/iphone.png" alt="iPhone">
                     </div>
                     <div>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <p>R$ 30,90</p>
-                        <p>R$ 28,90</p>
-                        <p>ou 2x de R$ 49,95 sem juros</p>
-                        <p>Frete grátis</p>
-                        <button>COMPRAR</button>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h3>Parceiros</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-                <button>CONFIRA</button>
+        <section class="parceiros">
+            <div class="parceiros-container">
+                <h3 class="parceiros-titulo">Parceiros</h3>
+                <p class="parceiros-texto">Lorem ipsum dolor sit amet, consectetur</p>
+                <button class="parceiros-btn">CONFIRA</button>
             </div>
-            <div>
-                <h3>Parceiros</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-                <button>CONFIRA</button>
+            <div class="parceiros-container">
+                <h3 class="parceiros-titulo">Parceiros</h3>
+                <p class="parceiros-texto">Lorem ipsum dolor sit amet, consectetur</p>
+                <button class="parceiros-btn">CONFIRA</button>
+            </div>
+        </section>
+        <section class="vitrine">
+            <h3 class="vitrine-titulo">Produtos relacionados</h3>
+            <p>Ver todos</p>
+            <div class="vitrine-container">
+                <div class="vitrine-container-item">
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="vitrine-container-item">
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="vitrine-container-item">
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="vitrine-container-item">
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="parceiros">
+            <div class="parceiros-container">
+                <h3 class="parceiros-titulo">Parceiros</h3>
+                <p class="parceiros-texto">Lorem ipsum dolor sit amet, consectetur</p>
+                <button class="parceiros-btn">CONFIRA</button>
+            </div>
+            <div class="parceiros-container">
+                <h3 class="parceiros-titulo">Parceiros</h3>
+                <p class="parceiros-texto">Lorem ipsum dolor sit amet, consectetur</p>
+                <button class="parceiros-btn">CONFIRA</button>
             </div>
         </section>
         <section>
@@ -223,60 +339,60 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h3>Produtos relacionados</h3>
+        <section class="vitrine">
+            <h3 class="vitrine-titulo">Produtos relacionados</h3>
             <p>Ver todos</p>
-            <div>
-                <div>
+            <div class="vitrine-container">
+                <div class="vitrine-container-item">
                     <div>
                         <img src="img/iphone.png" alt="iPhone">
                     </div>
                     <div>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <p>R$ 30,90</p>
-                        <p>R$ 28,90</p>
-                        <p>ou 2x de R$ 49,95 sem juros</p>
-                        <p>Frete grátis</p>
-                        <button>COMPRAR</button>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
                     </div>
                 </div>
-                <div>
+                <div class="vitrine-container-item">
                     <div>
                         <img src="img/iphone.png" alt="iPhone">
                     </div>
                     <div>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <p>R$ 30,90</p>
-                        <p>R$ 28,90</p>
-                        <p>ou 2x de R$ 49,95 sem juros</p>
-                        <p>Frete grátis</p>
-                        <button>COMPRAR</button>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
                     </div>
                 </div>
-                <div>
+                <div class="vitrine-container-item">
                     <div>
                         <img src="img/iphone.png" alt="iPhone">
                     </div>
                     <div>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <p>R$ 30,90</p>
-                        <p>R$ 28,90</p>
-                        <p>ou 2x de R$ 49,95 sem juros</p>
-                        <p>Frete grátis</p>
-                        <button>COMPRAR</button>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
                     </div>
                 </div>
-                <div>
+                <div class="vitrine-container-item">
                     <div>
                         <img src="img/iphone.png" alt="iPhone">
                     </div>
                     <div>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <p>R$ 30,90</p>
-                        <p>R$ 28,90</p>
-                        <p>ou 2x de R$ 49,95 sem juros</p>
-                        <p>Frete grátis</p>
-                        <button>COMPRAR</button>
+                        <h3 class="vitrine-titulo-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="vitrine-preco-antigo">R$ 30,90</p>
+                        <p class="vitrine-preco-novo">R$ 28,90</p>
+                        <p class="vitrine-preco-parcelado">ou 2x de R$ 49,95 sem juros</p>
+                        <p class="vitrine-frete">Frete grátis</p>
+                        <button class="vitrine-btn">COMPRAR</button>
                     </div>
                 </div>
             </div>

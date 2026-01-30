@@ -1,7 +1,7 @@
 nav {
     display: flex;
     flex-direction: column;
-    margin: 0 100px;
+    margin: 0 80px;
     .cabecalho-info-compra {
         display: flex;
         justify-content: space-between;
@@ -41,7 +41,7 @@ nav {
             height: 48px;
             &:focus-within {
                 border-color: $cor-secundaria;
-                background-color: #fff;
+                background-color: $branco;
                 box-shadow: 0 0 8px rgba(48, 25, 178, 0.25);
             }
             .cabecalho-pesquisa {
@@ -86,7 +86,7 @@ nav {
         padding: 0;
         justify-content: space-around;
         align-items: center;
-        background-color: #fff;
+        background-color: $branco;
         list-style: none;
         border: 1px solid transparent;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -103,13 +103,5 @@ nav {
                 color: $cor-secundaria;
             }
         }
-    }
-}
-.banner {
-    background: url("../../img/loja-black-friday.png") no-repeat;
-    width: 100%;
-    height: 100%;
-    h2 {
-        margin: 0;
     }
 }

@@ -1,0 +1,38 @@
+.banner {
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.7) 30%, transparent 70%),
+        url("../../img/loja-black-friday.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0 0px 81px;
+    .banner-titulo {
+        margin: 0;
+        font-weight: 600;
+        font-size: 48px;
+        color: $branco;
+        max-width: 600px;
+    }
+    .banner-subtitulo {
+        margin: 0 0 41px 0;
+        font-weight: 400;
+        font-size: 32px;
+        color: $branco;
+    }
+    .banner-subtitulo-destaque {
+        font-weight: 700;
+        color: $amarelo;
+    }
+    .banner-btn {
+        padding: 13px 54px;
+        font-family: $fonte;
+        font-size: 16px;
+        font-weight: 600;
+        color: $azul-escuro;
+        background-color: $amarelo;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        margin-bottom: 55px;
+        cursor: pointer;
+    }
+}
