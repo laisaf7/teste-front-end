@@ -7,70 +7,91 @@
     <title>E-commerce Econverse</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div>
-                <div>
+            <div class="cabecalho-info-compra">
+                <div class="cabecalho-info-compra-item">
                     <img src="img/ShieldCheck.svg" alt="Ícone de checagem">
-                    <p>Compra <strong>100% segura</strong></p>
+                    <p class="cabecalho-texto">Compra <strong class="cabecalho-texto-destaque">100% segura</strong></p>
                 </div>
-                <div>
+                <div class="cabecalho-info-compra-item">
                     <img src="img/Truck.svg" alt="Ícone de caminhão">
-                    <p><strong>Frete grátis </strong>acima de R$ 200</p>
+                    <p class="cabecalho-texto"><strong class="cabecalho-texto-destaque">Frete grátis </strong>acima de
+                        R$ 200</p>
                 </div>
-                <div>
+                <div class="cabecalho-info-compra-item">
                     <img src="img/CreditCard.svg" alt="Ícone de cartão de crédito">
-                    <p><strong>Parcele </strong>suas compras</p>
+                    <p class="cabecalho-texto"><strong class="cabecalho-texto-destaque">Parcele </strong>suas compras
+                    </p>
+                </div>
+            </div>
+            <div class="cabecalho-busca">
+                <div>
+                    <a href="#"><img src="img/Logo.svg" alt="Logo Econverse"></a>
+                </div>
+                <div class="container-pesquisa">
+                    <input type="search" class="cabecalho-pesquisa" name="busca"
+                        placeholder="O que você está buscando?">
+                    <img src="./img/MagnifyingGlass.svg" alt="Lupa" class="icone-lupa">
+                </div>
+                <div class="cabecalho-icones">
+                    <a href="#" title="Meus Pedidos"><img src="img/Box.svg" alt="Ícone de caixa"></a>
+                    <a href="#" title="Favoritos"><img src="img/Heart.svg" alt="Ícone de coração"></a>
+                    <a href="#" title="Minha Conta"><img src="img/UserCircle.svg" alt="Ícone de perfil"></a>
+                    <a href="#" title="Carrinho de Compras"><img src="img/ShoppingCart.svg"
+                            alt="Ícone de carrinho de compras"></a>
                 </div>
             </div>
             <div>
-                <div>
-                    <img src="img/Logo.svg" alt="Logo Econverse">
-                </div>
-                <div>
-                    <input type="search" class="banner_pesquisa" placeholder="O que você está buscando?">
-                </div>
-                <div>
-                    <img src="img/Box.svg" alt="Ícone de caixa">
-                    <img src="img/Heart.svg" alt="Ícone de coração">
-                    <img src="img/UserCircle.svg" alt="Ícone de perfil">
-                    <img src="img/ShoppingCart.svg" alt="Ícone de carrinho de compras">
-                </div>
-            </div>
-            <div>
-                <ul>
+                <ul class="cabecalho-categorias">
                     <li>
-                        <p>TODAS CATEGORIAS</p>
+                        <a href="#">
+                            <p class="cabecalho-categoria-item">TODAS CATEGORIAS</p>
+                        </a>
                     </li>
                     <li>
-                        <p>SUPERMERCADO</p>
+                        <a href="#">
+                            <p class="cabecalho-categoria-item">SUPERMERCADO</p>
+                        </a>
                     </li>
                     <li>
-                        <p>LIVROS</p>
+                        <a href="#">
+                            <p class="cabecalho-categoria-item">LIVROS</p>
+                        </a>
                     </li>
                     <li>
-                        <p>MODA</p>
+                        <a href="#">
+                            <p class="cabecalho-categoria-item">MODA</p>
+                        </a>
                     </li>
                     <li>
-                        <p>LANÇAMENTOS</p>
+                        <a href="#">
+                            <p class="cabecalho-categoria-item">LANÇAMENTOS</p>
+                        </a>
                     </li>
                     <li>
-                        <p>OFERTAS DO DIA</p>
+                        <a href="#">
+                            <p class="cabecalho-categoria-item">OFERTAS DO DIA</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="img/CrownSimple.svg" alt="Ícone de coroa">
-                        <p>ASSINATURA</p>
+                        <a href="#" class="cabecalho-categoria-link">
+                            <img src="img/CrownSimple.svg" alt="Ícone de coroa">
+                            <p class="cabecalho-categoria-item">ASSINATURA</p>
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="banner">
             <h2>Venha conhecer nossas promoções</h2>
             <h3><strong>50% Off </strong>nos produtos</h3>
             <button>Ver produto</button>
@@ -115,7 +136,202 @@
                 <li>TVS</li>
                 <li>VER TODOS</li>
             </ul>
+            <div>
+                <div>
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p>R$ 30,90</p>
+                        <p>R$ 28,90</p>
+                        <p>ou 2x de R$ 49,95 sem juros</p>
+                        <p>Frete grátis</p>
+                        <button>COMPRAR</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p>R$ 30,90</p>
+                        <p>R$ 28,90</p>
+                        <p>ou 2x de R$ 49,95 sem juros</p>
+                        <p>Frete grátis</p>
+                        <button>COMPRAR</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p>R$ 30,90</p>
+                        <p>R$ 28,90</p>
+                        <p>ou 2x de R$ 49,95 sem juros</p>
+                        <p>Frete grátis</p>
+                        <button>COMPRAR</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p>R$ 30,90</p>
+                        <p>R$ 28,90</p>
+                        <p>ou 2x de R$ 49,95 sem juros</p>
+                        <p>Frete grátis</p>
+                        <button>COMPRAR</button>
+                    </div>
+                </div>
+            </div>
         </section>
+        <section>
+            <div>
+                <h3>Parceiros</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <button>CONFIRA</button>
+            </div>
+            <div>
+                <h3>Parceiros</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <button>CONFIRA</button>
+            </div>
+        </section>
+        <section>
+            <h3>Navegue por marcas</h3>
+            <div>
+                <div>
+                    <img src="img/Logo.svg" alt="Logo Econverse">
+                </div>
+                <div>
+                    <img src="img/Logo.svg" alt="Logo Econverse">
+                </div>
+                <div>
+                    <img src="img/Logo.svg" alt="Logo Econverse">
+                </div>
+                <div>
+                    <img src="img/Logo.svg" alt="Logo Econverse">
+                </div>
+                <div>
+                    <img src="img/Logo.svg" alt="Logo Econverse">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Produtos relacionados</h3>
+            <p>Ver todos</p>
+            <div>
+                <div>
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p>R$ 30,90</p>
+                        <p>R$ 28,90</p>
+                        <p>ou 2x de R$ 49,95 sem juros</p>
+                        <p>Frete grátis</p>
+                        <button>COMPRAR</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p>R$ 30,90</p>
+                        <p>R$ 28,90</p>
+                        <p>ou 2x de R$ 49,95 sem juros</p>
+                        <p>Frete grátis</p>
+                        <button>COMPRAR</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p>R$ 30,90</p>
+                        <p>R$ 28,90</p>
+                        <p>ou 2x de R$ 49,95 sem juros</p>
+                        <p>Frete grátis</p>
+                        <button>COMPRAR</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="img/iphone.png" alt="iPhone">
+                    </div>
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p>R$ 30,90</p>
+                        <p>R$ 28,90</p>
+                        <p>ou 2x de R$ 49,95 sem juros</p>
+                        <p>Frete grátis</p>
+                        <button>COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3>Inscreva-se na nossa newsletter</h3>
+                <p>Asiine a nossa newsletter e receba as novidades e conteúdos exclusivos da Econverse.</p>
+            </div>
+            <div>
+                <form name="newsletter" id="newsletter" method="post" action="#">
+                    <div>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                        <button>INSCREVER</button>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="termos" id="termos">
+                        <label for="true">Aceito os termos e condições</label>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <div>
+                    <img src="img/Logo.svg" alt="Logo Econverse">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <img src="img/instagram.svg" alt="Logo do Instagram">
+                    <img src="img/facebook.svg" alt="Logo do Facebook">
+                    <img src="img/linkedin.svg" alt="Logo do LinkedIn">
+                </div>
+                <div>
+                    <h4>Institucional</h4>
+                    <p>Sobre Nós</p>
+                    <p>Movimento</p>
+                    <p>Trabalhe conosco</p>
+                </div>
+                <div>
+                    <h4>Ajuda</h4>
+                    <p>Suporte</p>
+                    <p>Fale Conosco</p>
+                    <p>Perguntas Frequentes</p>
+                </div>
+                <div>
+                    <h4>Termos</h4>
+                    <p>Termos e Condições</p>
+                    <p>Política de Privacidade</p>
+                    <p>Troca e Devolução</p>
+                </div>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </footer>
     </main>
 </body>
 

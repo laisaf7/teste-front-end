@@ -1,0 +1,128 @@
+html, body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px;
+}
+nav .cabecalho-info-compra {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 258px;
+}
+nav .cabecalho-info-compra .cabecalho-info-compra-item {
+  display: flex;
+  gap: 10px;
+}
+nav .cabecalho-info-compra .cabecalho-info-compra-item .cabecalho-texto {
+  color: #9f9f9f;
+  font-weight: 500;
+  font-size: 12px;
+}
+nav .cabecalho-info-compra .cabecalho-info-compra-item .cabecalho-texto .cabecalho-texto-destaque {
+  color: #3019b2;
+  font-weight: 600;
+}
+nav .cabecalho-busca {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+nav .cabecalho-busca .container-pesquisa {
+  flex-grow: 1;
+  max-width: 600px;
+  position: relative;
+  background-color: #f6f5f2;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+}
+nav .cabecalho-busca .container-pesquisa:focus-within {
+  border-color: #3019b2;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(48, 25, 178, 0.25);
+}
+nav .cabecalho-busca .container-pesquisa .cabecalho-pesquisa {
+  background: transparent;
+  border: none;
+  padding: 0 45px 0 15px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+nav .cabecalho-busca .container-pesquisa .cabecalho-pesquisa::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9f9f9f;
+}
+nav .cabecalho-busca .container-pesquisa .cabecalho-pesquisa::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9f9f9f;
+}
+nav .cabecalho-busca .container-pesquisa .icone-lupa {
+  position: absolute;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+nav .cabecalho-busca .cabecalho-icones {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+nav .cabecalho-busca .cabecalho-icones a {
+  display: flex;
+  transition: transform 0.2 ease;
+}
+nav .cabecalho-busca .cabecalho-icones a:hover {
+  transform: translateY(-3px);
+}
+nav .cabecalho-categorias {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  list-style: none;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+nav .cabecalho-categorias a {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+}
+nav .cabecalho-categorias .cabecalho-categoria-item {
+  color: #9f9f9f;
+  font-weight: 600;
+  font-size: 12px;
+}
+nav .cabecalho-categorias .cabecalho-categoria-item:hover {
+  color: #3019b2;
+}
+
+.banner {
+  background: url("../../img/loja-black-friday.png") no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.banner h2 {
+  margin: 0;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,8 @@
+@import './variable';
+
+html, body {
+    font-family: $fonte;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
