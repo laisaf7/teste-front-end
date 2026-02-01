@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
@@ -319,23 +321,23 @@
                 <button class="parceiros-btn">CONFIRA</button>
             </div>
         </section>
-        <section>
-            <h3>Navegue por marcas</h3>
-            <div>
-                <div>
-                    <img src="img/Logo.svg" alt="Logo Econverse">
+        <section class="marcas">
+            <h3 class="marcas-titulo">Navegue por marcas</h3>
+            <div class="marcas-container">
+                <div class="marcas-item">
+                    <img src="img/Logo.svg" class="marcas-img" alt="Logo Econverse">
                 </div>
-                <div>
-                    <img src="img/Logo.svg" alt="Logo Econverse">
+                <div class="marcas-item">
+                    <img src="img/Logo.svg" class="marcas-img" alt="Logo Econverse">
                 </div>
-                <div>
-                    <img src="img/Logo.svg" alt="Logo Econverse">
+                <div class="marcas-item">
+                    <img src="img/Logo.svg" class="marcas-img" alt="Logo Econverse">
                 </div>
-                <div>
-                    <img src="img/Logo.svg" alt="Logo Econverse">
+                <div class="marcas-item">
+                    <img src="img/Logo.svg" class="marcas-img" alt="Logo Econverse">
                 </div>
-                <div>
-                    <img src="img/Logo.svg" alt="Logo Econverse">
+                <div class="marcas-item">
+                    <img src="img/Logo.svg" class="marcas-img" alt="Logo Econverse">
                 </div>
             </div>
         </section>
@@ -397,56 +399,67 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h3>Inscreva-se na nossa newsletter</h3>
-                <p>Asiine a nossa newsletter e receba as novidades e conteúdos exclusivos da Econverse.</p>
-            </div>
-            <div>
-                <form name="newsletter" id="newsletter" method="post" action="#">
-                    <div>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-                        <button>INSCREVER</button>
+        <footer class="footer">
+            <section class="newsletter-container">
+                <div class="newsletter-container-textos">
+                    <h3 class="newsletter-titulo">Inscreva-se na nossa newsletter</h3>
+                    <p class="newsletter-texto">Assine a nossa newsletter e receba as novidades e conteúdos exclusivos
+                        da Econverse.</p>
+                </div>
+                <div>
+                    <form name="newsletter" id="newsletter" method="post" action="#" class="newsletter-form">
+                        <div class="newsletter-container-form">
+                            <div class="newsletter-container-input">
+                                <input type="text" class="newsletter-input" id="nome" name="nome"
+                                    placeholder="Digite seu nome">
+                            </div>
+                            <div class="newsletter-container-input">
+                                <input type="email" class="newsletter-input" id="email" name="email"
+                                    placeholder="Digite seu e-mail">
+                            </div>
+                            <button class="newsletter-btn">INSCREVER</button>
+                        </div>
+                        <div class="newsletter-termos">
+                            <input type="checkbox" name="termos" id="termos">
+                            <label for="true">Aceito os termos e condições</label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="rodape">
+                <div class="rodape-contatos">
+                    <img src="img/Logo.svg" class="rodape-contato-logo" alt="Logo Econverse">
+                    <p class="rodape-contato-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="rodape-contato-icone">
+                        <img src="img/instagram.svg" alt="Logo do Instagram">
+                        <img src="img/facebook.svg" alt="Logo do Facebook">
+                        <img src="img/linkedin.svg" alt="Logo do LinkedIn">
                     </div>
-                    <div>
-                        <input type="checkbox" name="termos" id="termos">
-                        <label for="true">Aceito os termos e condições</label>
+                </div>
+                <div class="rodape-info">
+                    <div class="rodape-info-item">
+                        <h4 class="rodape-info-titulo">Institucional</h4>
+                        <p class="rodape-info-texto">Sobre Nós</p>
+                        <p class="rodape-info-texto">Movimento</p>
+                        <p class="rodape-info-texto">Trabalhe conosco</p>
                     </div>
-                </form>
-            </div>
-        </section>
-        <footer>
-            <div>
-                <div>
-                    <img src="img/Logo.svg" alt="Logo Econverse">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <img src="img/instagram.svg" alt="Logo do Instagram">
-                    <img src="img/facebook.svg" alt="Logo do Facebook">
-                    <img src="img/linkedin.svg" alt="Logo do LinkedIn">
+                    <div class="rodape-info-item">
+                        <h4 class="rodape-info-titulo">Ajuda</h4>
+                        <p class="rodape-info-texto">Suporte</p>
+                        <p class="rodape-info-texto">Fale Conosco</p>
+                        <p class="rodape-info-texto">Perguntas Frequentes</p>
+                    </div>
+                    <div class="rodape-info-item">
+                        <h4 class="rodape-info-titulo">Termos</h4>
+                        <p class="rodape-info-texto">Termos e Condições</p>
+                        <p class="rodape-info-texto">Política de Privacidade</p>
+                        <p class="rodape-info-texto">Troca e Devolução</p>
+                    </div>
                 </div>
-                <div>
-                    <h4>Institucional</h4>
-                    <p>Sobre Nós</p>
-                    <p>Movimento</p>
-                    <p>Trabalhe conosco</p>
-                </div>
-                <div>
-                    <h4>Ajuda</h4>
-                    <p>Suporte</p>
-                    <p>Fale Conosco</p>
-                    <p>Perguntas Frequentes</p>
-                </div>
-                <div>
-                    <h4>Termos</h4>
-                    <p>Termos e Condições</p>
-                    <p>Política de Privacidade</p>
-                    <p>Troca e Devolução</p>
-                </div>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+            </section>
+            <section class="copyright">
+                <p class="copyright-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </section>
         </footer>
     </main>
 </body>
