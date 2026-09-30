@@ -1,0 +1,123 @@
+@use '../../styles/variables' as *;
+
+.product-shelf {
+  padding: 80px 10%;
+  text-align: center;
+
+  .shelf-title {
+    font-size: 2rem;
+    color: $primary-color;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 250px;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &::before {
+      right: 100%;
+      margin-right: 30px;
+    }
+
+    &::after {
+      left: 100%;
+      margin-left: 30px;
+    }
+  }
+
+  .shelf-tabs {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    li {
+      flex: 1;
+
+      button {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      &.active button {
+        color: $primary-color;
+        font-weight: bold;
+      }
+
+      &:not(:last-child) button {
+        border-right: 1px solid #ddd;
+      }
+    }
+  }
+
+  .see-all-link {
+    display: block;
+    text-align: center;
+    color: $secondary-color;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .products-grid {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .nav-arrow {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+      transition: background-color 0.2s, transform 0.1s;
+
+      &:hover {
+        background-color: #f4f4f4;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}

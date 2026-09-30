@@ -1,0 +1,66 @@
+// src/components/Footer/Footer.scss
+@use '../../styles/variables' as *;
+
+.main-footer {
+  background-color: $background-gray;
+  padding-top: 60px;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10% 60px 10%;
+
+    .company-info {
+      max-width: 300px;
+      
+      .footer-logo { margin-bottom: 20px; }
+      p { color: $secondary-color; line-height: 1.5; margin-bottom: 20px; }
+      
+      .social-links {
+        display: flex;
+        gap: 15px;
+        a {
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 80px;
+
+      .link-column {
+        h4 {
+          font-size: 1.1rem;
+          color: $secondary-color;
+          margin-bottom: 20px;
+        }
+        
+        ul {
+          list-style: none;
+          li {
+            margin-bottom: 15px;
+            a {
+              color: $text-light;
+              text-decoration: none;
+              font-size: 0.9rem;
+              &:hover { color: $primary-color; }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid $border-color;
+    text-align: center;
+    padding: 20px;
+    p {
+      color: $text-light;
+      font-size: 0.85rem;
+    }
+  }
+}

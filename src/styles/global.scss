@@ -1,0 +1,96 @@
+// src/styles/global.scss
+
+// Importa as variáveis definidas anteriormente
+@use './variables' as *;
+
+// Importação da fonte base (exemplo com Poppins)
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// 1. Reset Global (CSS Reset / Normalize)
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // Facilita a navegação suave ao clicar em links âncora (ex: menu)
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $background-gray; // Pode ajustar para #ffffff se preferir fundo totalmente branco
+  color: $secondary-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+// 2. Tipografia e Links
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+
+  &:focus-visible {
+    outline: 2px dashed $primary-color;
+    outline-offset: 4px;
+  }
+}
+
+ul, ol {
+  list-style: none;
+}
+
+// 3. Botões
+button {
+  font-family: inherit; // Herda a fonte Poppins
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+
+  // Acessibilidade: outline visível apenas quando navegado por teclado (Tab)
+  &:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+// 4. Imagens
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; // Remove aquele espaço extra em branco que fica abaixo de imagens inline
+}
+
+// 5. Inputs e Formulários
+input, textarea, select {
+  font-family: inherit;
+  outline: none;
+
+  &:focus {
+    border-color: $primary-color;
+  }
+}
+
+// 6. Classes Utilitárias (Acessibilidade)
+// Classe sr-only: oculta visualmente o elemento, mas mantém-no acessível para leitores de ecrã.
+// Essencial para o SEO e para melhorar a experiência de utilizadores com deficiência visual.
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

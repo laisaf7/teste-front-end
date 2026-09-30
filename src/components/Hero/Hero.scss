@@ -1,0 +1,106 @@
+@use '../../styles/variables' as *;
+
+.hero-section {
+  width: 100%;
+
+  .hero-banner {
+    position: relative;
+    background-image: url('../../assets/hero-bg.svg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 80px 10%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      .hero-subtitle {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        font-weight: 400;
+
+        strong {
+          color: $yellow-brand;
+        }
+      }
+
+      .cta-button {
+        background-color: $yellow-brand;
+        color: #271c47;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .hero-categories {
+    padding: 40px 10%;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        cursor: pointer;
+
+        .icon-box {
+          width: 128px;
+          height: 128px;
+          background-color: #f4f4f4;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2rem;
+          transition: all 0.3s ease;
+        }
+
+        .category-name {
+          font-weight: 500;
+          color: $secondary-color;
+          transition: color 0.3s ease;
+        }
+
+        &.active {
+          .icon-box {
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+          }
+
+          .category-name {
+            color: $primary-color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

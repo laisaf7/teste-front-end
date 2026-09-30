@@ -1,0 +1,137 @@
+@use '../../styles/variables' as *;
+
+.main-header {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 10;
+
+  .top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 8px 10%;
+    font-size: 0.75rem;
+    color: $secondary-color;
+    border-bottom: 1px solid $border-color;
+    font-weight: 500;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      strong {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+
+    .logo {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: $background-gray;
+      border-radius: 8px;
+      padding: 0 15px;
+      width: 50%;
+      height: 45px;
+      border: 1px solid transparent;
+      transition: border-color 0.2s;
+
+      &:focus-within {
+        border-color: $primary-color;
+      }
+
+      input {
+        flex: 1;
+        height: 100%;
+        border: none;
+        background: transparent;
+        font-size: 0.9rem;
+        color: $secondary-color;
+
+        &::placeholder {
+          color: $text-light;
+        }
+      }
+
+      button {
+        color: $text-light;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      button {
+        font-size: 1.5rem;
+        color: $text-light;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .main-nav {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10%;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 0.8rem;
+          font-weight: 600;
+          color: $text-light;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          transition: color 0.2s;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+
+        &.highlight a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

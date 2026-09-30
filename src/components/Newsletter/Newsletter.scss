@@ -1,0 +1,43 @@
+// src/components/Newsletter/Newsletter.scss
+@use '../../styles/variables' as *;
+
+.newsletter {
+  background-color: $purple-newsletter;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10%;
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .inputs-group {
+      display: flex;
+      gap: 15px;
+
+      input {
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+      }
+
+      button {
+        background-color: $yellow-brand;
+        color: $purple-newsletter;
+        border: none;
+        padding: 12px 24px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+    }
+  }
+}
